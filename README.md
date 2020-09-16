@@ -1,4 +1,5 @@
 # Auto-STGCN
 An automated system for STGCN model development.
 
-# OK
+## Auto-STGCN Algorithm: Searching for the optimal STGCN model
+
