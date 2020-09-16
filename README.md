@@ -12,5 +12,19 @@ An automated system for STGCN model development.
 * Log info of Auto-STGCN<br>
 
 `Command`<br>
-python Qlearning.py --Data "PEMS03"
-python Qlearning.py --Data "PEMS03" --gamma 0.1
+* python Auto_STGCN.py --Data "PEMS03"<br>
+* python Auto_STGCN.py --Data "PEMS03" --gamma 0.1<br>
+
+## 2. Auto-STGCN Algorithm: Training the optimal STGCN model
+`Inputs`<br>
+* Optimal STGCN code, Dataset name, Dataset partition ratio (validation set, test set, training set), Input sequence length, Output sequence length,<br>
+* Model training epochs, Model training times,<br>
+* Load model weight = None<br>
+
+`Outputs`<br>
+* Performance scores (Mean + variance: MAE, MAPE, RMSE, Time) of the Optimal STGCN model<br>
+* Log info of the model training<br>
+
+`Command`<br>
+* python TestBestSTGNN.py --model "...." --Data "PEMS03" --Load "None"<br>
+* python TestBestSTGNN.py --model "...." --Data "PEMS03" --Load "None"<br>
