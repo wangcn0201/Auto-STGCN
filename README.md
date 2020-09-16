@@ -1,5 +1,6 @@
 # Auto-STGCN
-An automated system for STGCN model development.
+An automated system for STGCN model development.<br>
+Code for paper 'Auto-STGCN: Autonomous Spatial-Temporal Graph Convolutional Network Search Based on Reinforcement Learning and Existing Research Results'<br>
 
 ## 1. Auto-STGCN Algorithm: Searching for the optimal STGCN model
 `Inputs`<br>
