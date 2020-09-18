@@ -3,12 +3,12 @@ An automated system for STGCN model development.<br>
 Code for paper 'Auto-STGCN: Autonomous Spatial-Temporal Graph Convolutional Network Search Based on Reinforcement Learning and Existing Research Results'.<br>
 
 ## 1. Auto-STGCN Algorithm: Searching for the optimal STGCN model
-`Inputs`<br>
+### Inputs
 * Dataset name, Dataset partition ratio (validation set, test set, training set), Input sequence length, Output sequence length,<br>
 * Timemax, Epoch size of each candidate model,<br>
 * Initial epsilon, Epsilon reduce step, Epsilon decay Ratio, Gamma of Qlearning, Learning rate of Qlearning, Episodes of Qlearning<br>
 
-`Outputs`<br>
+### Outputs
 * Code and performance scores of the Optimal STGCN searched by Auto-STGCN<br>
 * Log info of Auto-STGCN<br>
 
@@ -22,10 +22,10 @@ Code for paper 'Auto-STGCN: Autonomous Spatial-Temporal Graph Convolutional Netw
 * Model training epochs, Model training times,<br>
 * Load model weight = None<br>
 
-`Outputs`<br>
+### Outputs
 * Performance scores (Mean + variance: MAE, MAPE, RMSE, Time) of the Optimal STGCN model<br>
 * Log info of the model training<br>
 
-`Command`<br>
-* python TestBestSTGNN.py --model "...." --Data "PEMS03" --Load "None"<br>
-* python TestBestSTGNN.py --model "...." --Data "PEMS03" --Load "None"<br>
+### Command
+* `python TestBestSTGNN.py --model "...." --Data "PEMS03" --Load "None"`<br>
+* `python TestBestSTGNN.py --model "...." --Data "PEMS03" --Load "None"`<br>
