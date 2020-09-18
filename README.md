@@ -3,6 +3,16 @@ An automated system for STGCN model development.<br>
 Code for paper 'Auto-STGCN: Autonomous Spatial-Temporal Graph Convolutional Network Search Based on Reinforcement Learning and Existing Research Results'.<br>
 
 ## 1. Auto-STGCN Algorithm: Searching for the optimal STGCN model
+### Files
+Auto_STGCN.py --- run Auto-STGCN akgorithm<br>
+Model.py --- build STGCN model according to code<br>
+Env.py --- read dataset, record the state-action-reward information in Auto-STGCN algorithm<br>
+ExperimentDataLogger.py --- output the log information of Auto-STGCN algorithm<br>
+/Log --- log files<br>
+/utils --- auxiliary files<br>
+/data --- datasets<br>
+/Config --- default configurations<br>
+
 ### Inputs
 * Dataset name, Dataset partition ratio (validation set, test set, training set), Input sequence length, Output sequence length,<br>
 * Timemax, Epoch size of each candidate model,<br>
