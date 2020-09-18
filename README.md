@@ -12,12 +12,12 @@ Code for paper 'Auto-STGCN: Autonomous Spatial-Temporal Graph Convolutional Netw
 * Code and performance scores of the Optimal STGCN searched by Auto-STGCN<br>
 * Log info of Auto-STGCN<br>
 
-`Command`<br>
-* python Auto_STGCN.py --Data "PEMS03"<br>
-* python Auto_STGCN.py --Data "PEMS03" --gamma 0.1<br>
+### Command
+* `python Auto_STGCN.py --Data "PEMS03"`<br>
+* `python Auto_STGCN.py --Data "PEMS03" --gamma 0.1`<br>
 
 ## 2. Auto-STGCN Algorithm: Training the optimal STGCN model
-`Inputs`<br>
+### Inputs
 * Optimal STGCN code, Dataset name, Dataset partition ratio (validation set, test set, training set), Input sequence length, Output sequence length,<br>
 * Model training epochs, Model training times,<br>
 * Load model weight = None<br>
