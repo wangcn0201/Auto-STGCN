@@ -4,9 +4,9 @@ Code for paper 'Auto-STGCN: Autonomous Spatial-Temporal Graph Convolutional Netw
 
 ## 1. Auto-STGCN Algorithm: Searching for the optimal STGCN model
 ### Files
-Auto_STGCN.py --- run Auto-STGCN akgorithm<br>
-Model.py --- build STGCN model according to code<br>
-Env.py --- read dataset, record the state-action-reward information in Auto-STGCN algorithm<br>
+>Auto_STGCN.py --- run Auto-STGCN akgorithm<br>
+>Model.py --- build STGCN model according to code<br>
+>Env.py --- read dataset, record the state-action-reward information in Auto-STGCN algorithm<br>
 ExperimentDataLogger.py --- output the log information of Auto-STGCN algorithm<br>
 /Log --- log files<br>
 /utils --- auxiliary files<br>
