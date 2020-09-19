@@ -226,9 +226,12 @@ class GNNEnv(gym.Env):
             print(f"    eval_result: loss:{eval_loss_value}, MAE:{mae}, MAPE:{mape}, RMSE:{rmse}, time:{val_time}")
             val_loader.reset()
             # get reward
-            reward = -(mae - np.power(np.e, -19) * np.log2(self.time_max / val_time))
-            if reward < -1e3:
-                return reward / 100, True
+            if self.time_max <= val_time:
+                return -1, True
+            else:
+                reward = -(mae - np.power(np.e, -19) * np.log2(self.time_max - val_time))
+            if reward < -1e2:
+                return -1, True
             else:
                 reward /= 100
             self.logger(eval=[eval_loss_value, mae, mape, rmse, val_time])
@@ -238,7 +241,7 @@ class GNNEnv(gym.Env):
             self.logger.append_log_file(e.args[0])
             self.logger(train=None, eval=None, test=None)
             traceback.print_exc()
-            return -1000, True
+            return -1, True
 
     def render(self, mode='human'):
         pass
