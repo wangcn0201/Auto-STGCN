@@ -45,8 +45,8 @@ Code for paper 'Auto-STGCN: Autonomous Spatial-Temporal Graph Convolutional Netw
 * Log info of the model training<br>
 
 ### Commands
-* `python TestBestSTGNN.py --model "...." --Data "PEMS03" --Load "None"`<br>
-* `python TestBestSTGNN.py --model "...." --Data "PEMS03" --Load "None"`<br>
+* `python TestBestGNN.py --model "...." --Data "PEMS03" --Load "None"`<br>
+* `python TestBestGNN.py --model "...." --Data "PEMS03" --Load "None"`<br>
 
 ## 3. Auto-STGCN Algorithm: Loading the optimal STGCN model
 ### Realated Files
