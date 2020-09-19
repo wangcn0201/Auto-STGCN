@@ -23,8 +23,8 @@ Code for paper 'Auto-STGCN: Autonomous Spatial-Temporal Graph Convolutional Netw
 * Log info of Auto-STGCN<br>
 
 ### Commands
-* `python Auto_STGCN.py --Data "PEMS03"`<br>
-* `python Auto_STGCN.py --Data "PEMS03" --gamma 0.1`<br>
+* `python Auto_STGCN.py --data "PEMS03"`<br>
+* `python Auto_STGCN.py --data "PEMS03" --gamma 0.1`<br>
 
 ## 2. Auto-STGCN Algorithm: Training the optimal STGCN model
 ### Realated Files
