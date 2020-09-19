@@ -64,4 +64,4 @@ Code for paper 'Auto-STGCN: Autonomous Spatial-Temporal Graph Convolutional Netw
 * Performance scores (Mean + variance: MAE, MAPE, RMSE, Time) of the Optimal STGCN model on test set<br>
 
 ### Commands
-* `python TestBestGNN.py --data "PEMS03" --load "./Config/qlearning_2.json" --times 20`<br>
+* `python TestBestGNN.py --model "./Config/qlearning_2.json" --data "PEMS03" --load "./Log/PEMS03_experiment2_qlearning2_test/GNN/best_GNN_model.params" --times 20`<br>
