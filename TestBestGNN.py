@@ -297,7 +297,7 @@ class TrainEnv(GNNEnv):
         train_loader, val_loader, test_loader = self.data[batch_size]
         # test
         # load best eval metric model parameters
-        model.load_params(f'./Log/{self.dataset_name.upper()}_experiment2_qlearning_2/GNN/best_GNN_model.params',
+        model.load_params(f'./Log/{self.dataset_name.upper()}_experiment2_qlearning_2_test/GNN/best_GNN_model.params',
                           ctx=self.ctx)
         test_loss_value = 0
         test_batch_num = 0
@@ -396,7 +396,7 @@ if __name__ == "__main__":
     res = []
     for i in range(config['times']):
         env = TrainEnv(config, ctx, logger)
-        if args.load is not None:
+        if args.load is None:
             res.append(env.train_model(deepcopy(actions)))
         else:
             res.append(env.test_model(deepcopy(actions)))
