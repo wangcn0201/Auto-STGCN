@@ -15,7 +15,7 @@
     "epsilon_decay_ratio": 0.9999,
     "gamma": 0.9,
     "lr": 1e-3,
-    "episodes": 10000,
+    "episodes": 2000,
     "times": 5,
     "n": 4,
     "ctx": 0
