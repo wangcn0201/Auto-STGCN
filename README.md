@@ -2,6 +2,9 @@
 An automated system for STGCN model development.<br>
 Code for [**paper**](https://arxiv.org/pdf/2010.07474.pdf) 'Auto-STGCN: Autonomous Spatial-Temporal Graph Convolutional Network Search Based on Reinforcement Learning and Existing Research Results'.<br>
 
+Environment Building Method for Auto-STGCN:<br>
+* `pip install -r requirements.txt`<br>
+
 ## 1. Auto-STGCN Algorithm: Searching for the optimal STGCN model
 ### Realated Files
 >Auto_STGCN.py --- run Auto-STGCN akgorithm<br>
