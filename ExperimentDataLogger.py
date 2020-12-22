@@ -7,7 +7,7 @@ import logging
 import pathlib
 import json
 import dill
-
+import datetime
 
 class Logger:
     def __init__(self, log_name, config, resume, log_path="./NewLog/", larger_better=True):
@@ -18,6 +18,9 @@ class Logger:
         # train:[epoch, loss, MAE, MAPE, RMSE, Time]
         # eval:[loss, MAE, MAPE, RMSE, Time]
         # test:[loss, MAE, MAPE, RMSE, Time]
+        time_name = datetime.datetime.now()
+        time_name = datetime.datetime.strftime(time_name,'%Y-%m-%d-%H:%M:%S')
+        log_name = log_name + time_name
         self.log_name = log_name
         self.log_path = log_path + log_name + "/"
         self.data_unit = []
