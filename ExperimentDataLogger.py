@@ -10,7 +10,7 @@ import dill
 
 
 class Logger:
-    def __init__(self, log_name, config, resume, log_path="./Log/", larger_better=True):
+    def __init__(self, log_name, config, resume, log_path="./NewLog/", larger_better=True):
         self.episode = 0
         # data unit: list[episode]=[states, actions, train, eval, test, reward, time]
         # states: list(list())
