@@ -396,7 +396,7 @@ if __name__ == "__main__":
     res = []
     for i in range(config['times']):
         env = TrainEnv(config, ctx, logger)
-        if args.load is None:
+        if args.load is not None:
             res.append(env.train_model(deepcopy(actions)))
         else:
             res.append(env.test_model(deepcopy(actions)))
